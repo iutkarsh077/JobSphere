@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/helpers/VerificationEmail.jsx", "src/helpers/SendEmail.js", "src/components/parts/MoonIcon.jsx"],
   "exclude": ["node_modules"]
 }
