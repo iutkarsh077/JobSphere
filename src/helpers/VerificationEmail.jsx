@@ -34,7 +34,7 @@ import {
           </Row>
           <Row>
             <Text>
-              Thank you for registering on JobSphere. Please use the following verification
+              Thank you for registering on JOBSPHERE. Please use the following verification
               code to complete your registration:
             </Text>
           </Row>

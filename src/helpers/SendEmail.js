@@ -1,6 +1,8 @@
+"use server";
 import nodemailer from "nodemailer";
 import { render } from '@react-email/render';
 import VerificationEmail from './VerificationEmail';
+import { revalidatePath } from "next/cache";
 
 export async function sendMail({
   to,
@@ -31,6 +33,9 @@ export async function sendMail({
 
 
   try {
+    revalidatePath("/login");
+    revalidatePath("/forgot-Password");
+    revalidatePath("/signup");
     const sendResult = await transport.sendMail({
       from: SMTP_EMAIL,
       to,
