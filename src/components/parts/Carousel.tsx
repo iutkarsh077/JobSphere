@@ -68,7 +68,7 @@ export default function Carousel() {
     {
         isLoading ? (<div className="h-[400px] w-full  flex items-center justify-center">
           <Loader2 className="mr-2 h-8 w-8 animate-spin" />
-        </div>) :(<div className="ml-4 mr-4 mt-3">
+        </div>) :(<div className="md:ml-4 md:mr-4 mt-3">
             <Swiper
               direction={"horizontal"}
               autoplay={{
@@ -84,8 +84,8 @@ export default function Carousel() {
               {jobData && jobData.slice(0, 5).map((job: any) => (
                 <div key={job.id}>
                   <SwiperSlide className="">
-                    <div className="flex justify-center h-full p-3">
-                      <div className="mb-4 flex items-center rounded-md  justify-end md:mb-0 md:mr-4 w-1/2">
+                    <div className="flex justify-center  h-full p-3">
+                      <div className="mb-4 hidden md:flex items-center rounded-md  justify-end md:mb-0 md:mr-4 md:w-1/2">
                         <img
                           src={job.image}
                           alt={`Image for ${job.jobTitle}`}

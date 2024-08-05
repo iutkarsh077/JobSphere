@@ -86,13 +86,13 @@ const SearchBox = () => {
       </div>
       <div className="w-full">
       {searchText.length === 0 ? (
-        <div className="grid grid-cols-1 md:grid-cols-2 ml-14 mr-14 md:gap-x-5">
+        <div className="grid grid-cols-1 xl:grid-cols-2 ml-7 mr-7 sm:ml-14 sm:mr-14 md:gap-x-5">
           {jobData.map((job) => (
             <JobCard key={job.id} job={job} />
           ))}
         </div>
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 ml-14 mr-14 md:gap-x-5">
+        <div className="grid grid-cols-1 xl:grid-cols-2 ml-7 mr-7 sm:ml-14 sm:mr-14 md:gap-x-5">
           {searchedJobData?.map((job) => (
             <JobCard key={job.id} job={job} />
           ))}

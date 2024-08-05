@@ -76,7 +76,7 @@ const Profile = () => {
 
       <div className="p-4 md:p-6 lg:p-8">
         {
-          getUserDetails.role == "admin" ? (<Link href="/addJobs"><Button>Add cars</Button></Link>) : ("")
+          getUserDetails.role == "admin" ? (<Link href="/allJobs"><Button>All Jobs</Button></Link>) : ("")
         }
       </div>
 

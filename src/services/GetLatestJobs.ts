@@ -5,6 +5,8 @@ import prisma from "../../prisma";
 
 export async function GetLatestJobs(){
     revalidatePath("/");
+    revalidatePath("/allJobs");
+
     try {
         const getAllLatestJobs = await prisma.jobs.findMany({
             orderBy: {

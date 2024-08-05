@@ -77,6 +77,7 @@ function JobPage({ jobData }: { jobData: any }) {
                 {jobData.jobRole}
               </h4>
               <div className="space-x-2">
+                
                 <Link
                   href={jobData.applicationLink}
                   className="signInbut bg-purple-900 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors duration-300"
