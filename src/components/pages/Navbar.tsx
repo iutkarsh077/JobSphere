@@ -36,6 +36,7 @@ export function Navbar({ UserDetails }: { UserDetails: any }) {
       router.push("/");
     } catch (error) {
       // console.log(error);
+      
     }
   };
 
