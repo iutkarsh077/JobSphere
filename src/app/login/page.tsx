@@ -85,23 +85,7 @@ const Login = () => {
   return (
     <>
       {!verifyEmail ? (
-        <div className="h-screen w-screen flex justify-center items-center bg-gray-900">
-          <div className=" block absolute top-0 left-0 h-full w-full">
-            <Image
-              src="/images/jobBG2.jpeg"
-              alt="image"
-              layout="fill"
-              objectFit="cover"
-              className="opacity-50"
-            />
-            {/* <video
-            src="/videos/car1.mp4"
-            autoPlay
-            loop
-            muted
-            className="w-full h-full object-cover opacity-50"
-          /> */}
-          </div>
+        <div className="h-screen w-screen flex justify-center items-center bg-cover bg-center bg-gray-900" style={{ backgroundImage: "url('/images/jobBG2.jpeg')" }}>
           <div className="relative z-10 w-full max-w-md mx-auto opacity-90 bg-gray-800 ml-2 mr-2 md:ml-0 md:mr-0 p-6 rounded-lg shadow-5xl">
             <Card className="w-full bg-gray-800 border-gray-600">
               <CardHeader>

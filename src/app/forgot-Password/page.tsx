@@ -104,16 +104,8 @@ const ForgotPassword = () => {
   return (
     <>
     {
-        !NewPassword ? (<div className="h-screen w-screen flex justify-center items-center bg-gray-900">
-            <div className="block absolute top-0 left-0 h-full w-full">
-              <Image
-                src="/images/jobBG2.jpeg"
-                alt="Background Image"
-                layout="fill"
-                objectFit="cover"
-                className="opacity-50"
-              />
-            </div>
+        !NewPassword ? (<div className="h-screen w-screen flex justify-center items-center bg-gray-900 bg-center bg-cover" style={{ backgroundImage: "url('/images/jobBG2.jpeg')" }}>
+            
             <div className="relative z-10 w-full max-w-md mx-auto opacity-90 bg-gray-800 p-6 rounded-lg shadow-5xl">
               <Card className="w-full bg-gray-800 border-gray-600">
                 <CardHeader>
