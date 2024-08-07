@@ -18,3 +18,20 @@ export async function GetADedicatedJob(slug: string){
         return {message: "Something went wrong", status: false};
     }
 }
+
+
+export async function GetADedicatedJobById(id: any){
+    revalidatePath("/editJob");
+    try {
+        const getJob = await prisma.jobs.findUnique({
+            where: {
+                id: id
+            }
+        })
+
+        console.log(getJob);
+        return {message: "Latest jobs are retrieved", status: true, getJob}
+    } catch (error) {
+        return {message: "Something went wrong", status: false};
+    }
+}

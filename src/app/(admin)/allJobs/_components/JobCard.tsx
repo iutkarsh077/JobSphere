@@ -35,6 +35,8 @@ const JobCard = ({ job }: { job: any }) => {
             })
         }
     }
+
+    
   return (
     <>
     <div className=" mt-10 gap-y-6 flex flex-col md:flex-row w-full bg-white dark:bg-neutral-900 shadow-md rounded-lg overflow-hidden">
@@ -87,6 +89,7 @@ const JobCard = ({ job }: { job: any }) => {
     </DialogFooter>
   </DialogContent>
 </Dialog>
+         <p><Link href={`/editJob/${job.id}`}><Button className="bg-blue-500 hover:bg-blue-700 text-white">Edit</Button></Link></p>
          </p>
         </div>
       </div>
