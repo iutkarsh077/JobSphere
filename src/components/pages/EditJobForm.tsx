@@ -64,15 +64,13 @@ const EditJobForm = ({jobDetails}: {jobDetails: any}) => {
   // console.log(jobDetails)
     
   const handleJobUpload = async (data: EditJobSchema) => {
-    data.image = imageUrl;
     data.Jobid = jobDetails.id;
     // console.log(data);
     if(!imageUrl){
-        toast({
-            title: "Image is Required",
-            duration: 2000
-        })
-        return;
+      data.image = jobDetails.image;
+    }
+    else{
+      data.image = imageUrl;
     }
     try {
         setIsLoading(true);
