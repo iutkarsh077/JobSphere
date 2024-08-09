@@ -6,7 +6,7 @@ import { GetLatestJobs } from "@/services/GetLatestJobs";
 import { toast } from "../ui/use-toast";
 import { Loader2 } from "lucide-react";
 
-export function AppleCardsCarousel() {
+export function MostViewed() {
   const [jobData, setJobData] = useState<any[]>();
   const [isLoading, setIsLoading] = useState(false);
   useEffect(()=>{
@@ -17,8 +17,8 @@ export function AppleCardsCarousel() {
               if (!jobData1.status) {
                   throw new Error("Failed to get jobs");
                 }
-                const myjob = jobData1.getAllLatestJobs?.slice(15, 21).reverse();
-                  setJobData(myjob);
+                const jobData = jobData1.getAllLatestJobs?.slice(7, 14).reverse();
+                  setJobData(jobData);
           } catch (error) {
               toast({
                   title: "Something went wrong!",
@@ -58,7 +58,7 @@ export function AppleCardsCarousel() {
   return (
     <div className="w-full h-full py-20">
       <h2 className="max-w-7xl pl-4 lg:pl-0 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
-      Unlock Your Potential.
+      Your Next Opportunity.
       </h2>
       <Carousel items={cards} />
     </div>
@@ -81,44 +81,3 @@ const DummyContent = ({ description, image }: {description: string, image: strin
     </div>
   );
 };
-
-
-// const data = [
-//   {
-//     category: "Software Developer",
-//     title: "Hello I am utkarsh singh.",
-//     src: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=3556&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-//     content: <DummyContent />,
-//   },
-//   {
-//     category: "Productivity",
-//     title: "Enhance your productivity.",
-//     src: "https://images.unsplash.com/photo-1531554694128-c4c6665f59c2?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-//     content: <DummyContent />,
-//   },
-//   {
-//     category: "Product",
-//     title: "Launching the new Apple Vision Pro.",
-//     src: "https://images.unsplash.com/photo-1713869791518-a770879e60dc?q=80&w=2333&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-//     content: <DummyContent />,
-//   },
-
-//   {
-//     category: "Product",
-//     title: "Maps for your iPhone 15 Pro Max.",
-//     src: "https://images.unsplash.com/photo-1599202860130-f600f4948364?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-//     content: <DummyContent />,
-//   },
-//   {
-//     category: "iOS",
-//     title: "Photography just got better.",
-//     src: "https://images.unsplash.com/photo-1602081957921-9137a5d6eaee?q=80&w=2793&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-//     content: <DummyContent />,
-//   },
-//   {
-//     category: "Hiring",
-//     title: "Hiring for a Staff Software Engineer",
-//     src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-//     content: <DummyContent />,
-//   },
-// ];
