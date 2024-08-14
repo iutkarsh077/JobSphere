@@ -1,4 +1,4 @@
-# Cars Project
+# JobSphere Project
 
 Welcome to the Jobsphere Project! This is a Next.js application with a focus on full-stack development using modern technologies. Below you'll find information on how to get started, as well as details about the tech stack used in this project.
 
