@@ -91,10 +91,10 @@ To learn more about the technologies used in this project, check out the followi
 ## Images
 
 [![jobsphere1.png](https://i.postimg.cc/CKSk6Cm9/jobsphere1.png)](https://postimg.cc/v4244nRv)
-*This is a placeholder image. Replace it with actual screenshots of your project.*
+
 
 [![jobsphere2.png](https://i.postimg.cc/MHqTmxxB/jobsphere2.png)](https://postimg.cc/Q9Yhj2FN)
-*This is a placeholder image. Replace it with an image illustrating the tech stack used.*
+
 
 ## Deploy on Vercel
 
