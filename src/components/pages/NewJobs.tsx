@@ -53,6 +53,7 @@ export function AppleCardsCarousel() {
     <Card key={card.id} card={card} index={index} />
   ));
 
+  
 
 
   return (
