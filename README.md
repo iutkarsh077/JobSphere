@@ -1,6 +1,13 @@
-# Cars Project
+# JobSphere Project
 
 Welcome to the Jobsphere Project! This is a Next.js application with a focus on full-stack development using modern technologies. Below you'll find information on how to get started, as well as details about the tech stack used in this project.
+
+## Images
+
+[![jobsphere1.png](https://i.postimg.cc/CKSk6Cm9/jobsphere1.png)](https://postimg.cc/v4244nRv)
+
+
+[![jobsphere2.png](https://i.postimg.cc/MHqTmxxB/jobsphere2.png)](https://postimg.cc/Q9Yhj2FN)
 
 ## Tech Stack
 
@@ -77,6 +84,9 @@ To get started with the project, follow these steps:
 - **`public/`**: Static assets like images and fonts.
 - **`styles/`**: CSS and Tailwind configurations.
 
+
+
+
 ## Learn More
 
 To learn more about the technologies used in this project, check out the following resources:
@@ -88,13 +98,7 @@ To learn more about the technologies used in this project, check out the followi
 - [Prisma Documentation](https://www.prisma.io/docs/)
 - [NextAuth.js Documentation](https://next-auth.js.org/getting-started/introduction)
 
-## Images
 
-[![jobsphere1.png](https://i.postimg.cc/CKSk6Cm9/jobsphere1.png)](https://postimg.cc/v4244nRv)
-*This is a placeholder image. Replace it with actual screenshots of your project.*
-
-[![jobsphere2.png](https://i.postimg.cc/MHqTmxxB/jobsphere2.png)](https://postimg.cc/Q9Yhj2FN)
-*This is a placeholder image. Replace it with an image illustrating the tech stack used.*
 
 ## Deploy on Vercel
 
