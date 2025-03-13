@@ -54,7 +54,6 @@ export function MostViewed() {
   ));
 
 
-
   return (
     <div className="w-full h-full py-20">
       <h2 className="max-w-7xl pl-4 lg:pl-0 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
